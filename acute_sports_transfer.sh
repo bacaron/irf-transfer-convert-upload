@@ -1,9 +1,12 @@
 #!/bin/bash
 
-irfDir="/N/dcwan/projects/irf/Prisma"
-transferDir="/N/project/plab/acute_concussion/"
+#irfDir="/N/dcwan/projects/irf/Prisma"
+irfDir=$1
+transferDir=$2
+data_keys=$3
+#transferDir="/N/project/plab/acute_concussion/"
 
-data=(`ls -d ${irfDir}/*Acute* ${irfDir}/*ACUTE*`)
+data=(`ls -d ${irfDir}/*${data_keys}*`)
 
 for i in ${data[*]}
 do
