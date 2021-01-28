@@ -8,7 +8,8 @@ subjectID=$2
 session_tag=$3
 session_id="`echo ${session_tag:(-1)}`" # grabs last character which should be the session number
 dwi_reconst_tag=$4
-projectID="59cbd18ff32356076a887fe4"
+#projectID="59cbd18ff32356076a887fe4"
+projectID=$5
 
 # grab data
 t1s=(`ls ${topPath}/niftis/*tfl3d_nsIR_sag*.nii`)
